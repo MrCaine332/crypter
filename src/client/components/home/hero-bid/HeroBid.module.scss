@@ -1,0 +1,138 @@
+.heroBid {
+  padding: 112px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+
+  .bidImage {
+    width: 640px;
+    height: 800px;
+    background-color: var(--neutral-6);
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .bidInfo {
+    width: 352px;
+    color: var(--text-1);
+
+    .creatorAndPrice {
+      display: flex;
+      gap: 32px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+
+      .item {
+        width: 160px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        .abstract {
+          height: 40px;
+          width: 40px;
+          background-color: var(--primary-4);
+          border-radius: 50%;
+        }
+
+        .itemText {
+          display: flex;
+          flex-direction: column;
+          color: var(--text-1);
+
+          .itemTextCaption {
+            color: var(--text-2);
+          }
+        }
+      }
+    }
+
+    .auctionInfo {
+      background-color: var(--btn-outlined-hover-text);
+      width: 100%;
+      padding: 32px;
+      box-shadow: 0 64px 64px -48px rgba(31, 47, 70, 0.12);
+
+      border: 1px solid var(--auction-border-color);
+      border-radius: 24px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      text-align: center;
+
+      .auctionInfoHead {
+        p:last-child {
+          color: var(--text-2);
+        }
+      }
+      .auctionInfoTime {
+
+        .auctionInfoTimer {
+          margin-top: 8px;
+          display: flex;
+          justify-content: center;
+          gap: 32px;
+
+          .timerItem {
+            p {
+              color: var(--text-2);
+            }
+          }
+        }
+      }
+    }
+
+    .buttons {
+      margin-top: 40px;
+      display: grid;
+      gap: 8px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1279px){
+  .heroBid {
+    .bidImage {
+      width: 528px;
+    }
+
+    .bidInfo {
+      width: 304px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 879px){
+  .heroBid {
+    flex-direction: column;
+    place-items: center;
+
+    .bidImage {
+      max-width: 460px;
+      height: auto;
+      aspect-ratio: 4/6;
+    }
+  }
+}
+
+@media screen and (max-width: 450px){
+  .heroBid {
+    flex-direction: column;
+    place-items: center;
+
+    .bidImage {
+      width: calc(100%);
+      height: auto;
+    }
+  }
+}

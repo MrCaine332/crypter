@@ -1,0 +1,30 @@
+.filter {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  .filterTop {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .selectContainer {
+      & > div {
+        width: 180px;
+      }
+    }
+
+    .btnContainer {
+      width: 116px;
+    }
+  }
+
+  .filterBottom {
+    display: flex;
+    gap: 32px;
+  }
+
+}

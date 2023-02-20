@@ -1,0 +1,83 @@
+.creatorCardWrap {
+  width: 192px;
+  height: 324px;
+}
+
+.creatorCard {
+  z-index: 0;
+  //position: absolute;
+
+  width: 192px;
+  height: 248px;
+  padding: 24px;
+
+  background-color: var(--background-primary);
+  border-radius: 16px;
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &:hover {
+    height: 264px;
+    box-shadow: 0 32px 48px -12px rgba(31, 47, 70, 0.12);
+
+    .creatorInfo .avatar {
+      height: 80px;
+      width: 80px;
+      transition: 0.3s;
+    }
+  }
+
+  .cardHeader {
+    display: flex;
+    justify-content: space-between;
+
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .icon {
+        height: 24px;
+
+        svg {
+          fill: var(--text-2);
+
+          &:hover {
+            fill: var(--text-2-hover);
+          }
+        }
+      }
+
+      .iconExpand {
+        rotate: -45deg;
+      }
+    }
+  }
+
+  .creatorInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    height: 500px;
+
+    .avatar {
+      border-radius: 50%;
+      height: 64px;
+      width: 64px;
+      background-color: var(--primary-1);
+    }
+
+    .details {
+      color: var(--text-1);
+      text-align: center;
+
+      span {
+        color: var(--text-2);
+      }
+    }
+  }
+}

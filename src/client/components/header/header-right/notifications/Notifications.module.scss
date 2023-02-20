@@ -1,0 +1,58 @@
+.notifications {
+  position: relative;
+  height: 100%;
+  width: 40px;
+  //padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .bell {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      top: 0;
+      right: 0;
+      background-color: var(--primary-4);
+      border-radius: 50%;
+    }
+  }
+
+  .dropdown {
+    width: 356px;
+    right: auto;
+  }
+
+  svg {
+    fill: var(--neutral-4);
+  }
+
+  &:hover {
+    svg {
+      fill: var(--text-2-hover);
+    }
+  }
+
+}
+
+@media screen and (max-width: 879px) {
+  .notifications {
+    .dropdown {
+      right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .notifications {
+    position: static;
+  }
+}

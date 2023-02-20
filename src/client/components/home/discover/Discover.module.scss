@@ -1,0 +1,12 @@
+.discover {
+  padding: 128px 0;
+  color: var(--text-1);
+
+  .loadMore {
+    margin-top: 32px;
+    button {
+      width: fit-content;
+      margin: auto;
+    }
+  }
+}

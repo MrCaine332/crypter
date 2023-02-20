@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
+
+//////////////////// [ HEADERS ] ////////////////////
+
+@mixin textHeadline($font-size, $line-height) {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+.hero { @include textHeadline(96px, 96px); }
+
+.headline1 { @include textHeadline(64px, 64px); }
+
+.headline2 { @include textHeadline(48px, 56px); }
+
+.headline3 { @include textHeadline(40px, 48px); }
+
+.headline4 { @include textHeadline(32px, 40px); }
+
+//////////////////// [ BODY TEXT ] ////////////////////
+
+@mixin textPoppins($font-weight, $font-size, $line-height) {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+.textBody {
+  @include textPoppins(400, 24px, 32px);
+}
+
+.textBodyBold {
+  @include textPoppins(600, 24px, 32px);
+}
+
+.textBody2 {
+  @include textPoppins(400, 16px, 24px);
+}
+
+.textBody2Bold {
+  @include textPoppins(500, 16px, 24px);
+}
+
+
+//////////////////// [ CAPTIONS ] ////////////////////
+
+.textCaption {
+  @include textPoppins(400, 14px, 24px);
+}
+
+.textCaptionBold {
+  @include textPoppins(500, 14px, 24px);
+}
+
+.textCaption2 {
+  @include textPoppins(400, 12px, 20px);
+}
+
+.textCaption2Bold {
+  @include textPoppins(600, 12px, 20px);
+}
+
+.hairlineLarge {
+  @include textPoppins(700, 16px, 16px);
+}
+
+.hairlineSmall {
+  @include textPoppins(700, 12px, 12px);
+}
+
+
+//////////////////// [ BUTTONS ] ////////////////////
+
+.button1 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.button2 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}

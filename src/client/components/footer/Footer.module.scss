@@ -1,0 +1,95 @@
+.footer {
+  background-color: var(--background-primary);
+  border-top: 1px solid var(--accent);
+
+  .footerContent {
+    margin: auto;
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 0.8fr 1.2fr;
+    grid-template-rows: 1fr;
+    gap: 32px 32px;
+    grid-auto-flow: row;
+    grid-template-areas:
+            "logo info1 info2 mailing";
+
+    .logo, .info1, .info2, .mailing {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      p {
+        color: var(--text-1);
+      }
+    }
+
+    .logo {
+      grid-area: logo;
+
+      .title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+
+    .info1 { grid-area: info1; }
+
+    .info2 { grid-area: info2; }
+
+    .mailing { grid-area: mailing; }
+
+    .body {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      color: var(--text-2);
+    }
+  }
+
+}
+
+@media screen and (max-width: 1279px) {
+  .footer .footerContent {
+    padding: 40px 42px;
+
+    .logo {
+      .title {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 879px) {
+  .footer .footerContent {
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+            "logo info1"
+            "mailing info2";
+
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .footer .footerContent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    grid-template-areas:
+            "logo"
+            "info1"
+            "info2"
+            "mailing";
+
+    .info1, .info2, .mailing {
+      padding-top: 20px;
+      border-top: 1px solid var(--accent);
+    }
+
+  }
+}

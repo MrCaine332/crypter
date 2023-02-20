@@ -1,0 +1,23 @@
+.categories {
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  width: auto;
+
+  display: flex;
+
+  gap: 12px;
+
+
+  .btnContainer {
+    padding: 6px 12px;
+
+    &_selected {
+      border-radius: 50px;
+      background-color: var(--neutral-3);
+      button {
+        color: var(--neutral-8);
+      }
+    }
+  }
+}

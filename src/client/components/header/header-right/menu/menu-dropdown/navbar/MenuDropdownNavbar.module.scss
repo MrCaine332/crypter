@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &_marginTop {
+    margin-top: 24px;
+  }
+
+  .navbarItem {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .navbarItemButton {
+      p {
+        padding-top: 2px;
+      }
+
+      svg {
+        fill: var(--text-2);
+      }
+
+      &:hover {
+        svg {
+          fill: var(--text-2-hover);
+        }
+      }
+    }
+  }
+}

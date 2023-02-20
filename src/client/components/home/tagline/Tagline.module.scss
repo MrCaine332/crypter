@@ -1,0 +1,28 @@
+.tagline {
+  padding-top: 112px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+
+  h3 {
+    color: var(--text-1);
+  }
+
+  .hairline {
+    color: var(--text-2);
+    margin-bottom: 8px;
+  }
+
+  .button {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 599px){
+  .tagline {
+    h3 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}

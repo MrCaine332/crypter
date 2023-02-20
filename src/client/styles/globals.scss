@@ -1,0 +1,65 @@
+@import "colors";
+@import "container";
+@import "typography";
+
+:root {
+  @extend %colors;
+}
+
+
+html,
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+header, div, span, button, a, svg, hr {
+  transition: 0.15s;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  //outline: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+input {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex-grow: 1;
+  color: var(--text-1);
+
+  &::placeholder {
+    transition: 0.2s;
+    color: var(--neutral-4);
+  }
+
+  &:focus::placeholder {
+    color: var(--text-2-hover);
+  }
+
+  &:hover::placeholder {
+    color: var(--text-2-hover);
+  }
+}
+
+.page {
+  background-color: var(--background-primary);
+}
+
+.home {
+}

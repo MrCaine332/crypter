@@ -1,0 +1,35 @@
+.feed {
+  padding-bottom: 112px;
+  display: grid;
+  gap: 64px 32px;
+  grid-template-columns: 448px 351px auto 224px;
+  grid-template-rows: auto;
+  grid-template-areas: 'featuredItem itemList feed-divider latestUploads';
+
+  hr {
+    grid-area: feed-divider;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .feed {
+    grid-template-columns: 414px 418px;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+            "featuredItem itemList" "latestUploads latestUploads";
+    hr {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 879px) {
+  .feed {
+    grid-template-columns: 100%;
+    grid-template-areas:
+            "featuredItem" "latestUploads";
+    hr {
+      display: none;
+    }
+  }
+}

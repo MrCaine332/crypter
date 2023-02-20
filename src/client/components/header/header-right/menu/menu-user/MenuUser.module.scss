@@ -1,0 +1,33 @@
+.menuUser {
+  width: 100%;
+  height: 100%;
+  padding: 2px 12px 2px 2px;
+
+  border: 2px solid var(--accent);
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    border-color: var(--neutral-4);
+  }
+
+  .avatar {
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    border-radius: 50%;
+    background-color: lightcoral;
+  }
+
+  .balance {
+    .amount {
+      color: var(--text-1);
+      margin-right: 4px;
+    }
+    .currency {
+      color: var(--primary-4);
+    }
+  }
+}

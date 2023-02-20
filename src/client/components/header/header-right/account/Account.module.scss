@@ -1,0 +1,10 @@
+.account {
+  display: flex;
+  gap: 12px;
+}
+
+@media screen and (max-width: 879px) {
+  .hiddenBtn {
+    display: none!important;
+  }
+}

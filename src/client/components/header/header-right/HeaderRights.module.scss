@@ -1,0 +1,12 @@
+.headerRight {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+@media screen and (max-width: 879px){
+  .headerRight {
+    gap: 16px;
+  }
+}

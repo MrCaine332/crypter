@@ -1,0 +1,24 @@
+.hotBid {
+  padding: 136px 0 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  color: var(--text-1);
+
+  .header {
+
+  }
+
+  .body {
+    width: 100%;
+    overflow: auto;
+
+    .mediaItems {
+      display: flex;
+      gap: 32px;
+      justify-content: space-between;
+      width: fit-content;
+    }
+
+  }
+}

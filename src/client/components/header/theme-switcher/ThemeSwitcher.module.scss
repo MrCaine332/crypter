@@ -1,0 +1,41 @@
+.themeSwitcher {
+  height: 100%;
+  width: 24px;
+  overflow: hidden;
+  display: flex;
+
+  .themeSwitcher_inner {
+    transition: 0.3s;
+    width: 100%;
+    height: 200%;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      svg {
+        fill: var(--text-2-hover);
+      }
+    }
+  }
+
+  .themeSwitcher_icon {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input:checked + .themeSwitcher_inner {
+    translate: 0 -50% 0;
+  }
+
+  svg {
+    fill: var(--neutral-4);
+  }
+}
+
+@media screen and (max-width: 879px) {
+  .themeSwitcher {
+    display: none;
+  }
+}
